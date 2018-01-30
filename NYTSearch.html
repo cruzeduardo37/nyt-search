@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+	
+	<div class="Container">
+	 
+	 	<div class="header">
+			<h1>New York Times Search</h1>
+		</div>
+		
+		<br><br>
+	<!-- create a form that has "topic", "number of articles", "start year". "end year" -->
+		
+		<form>
+				<div class="panel">
+				<div class="panel-heading">
+					Search Parameters
+				</div>
+				<br>
+			<div class="form-group">
+	    		<label for="searchTerms">Search Terms</label>
+	    		<input type="input" class="form-control" id="searchTerms" placeholder=" eg: World War II">
+	  		</div>
+				  
+		 	<div class="form-group">
+		 		<label value="" disabled="disabled" selected="selected">Number of Articles</label>
+		 		<br>
+				<select id="numOfArticles">
+				 	<option value="1">1</option>
+				 	<option value="5">5</option>
+				  	<option value="10">10</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				    <label for="Topic">Start Year</label>
+				    <input type="input" class="form-control" id="startYear" placeholder=" eg: 1939">
+			</div>
+
+			<div class="form-group">
+				    <label for="Topic">End Year</label>
+				    <input type="input" class="form-control" id="endYear" placeholder=" eg: 1948">
+			</div>
+
+				 
+				  
+				  <button  id= "searchButton" type="submit" class="btn btn-primary">Search</button>
+				  <button  id= "clearButton" class="btn btn-default">Clear Results
+				  </button>
+		</div>		  
+		</form>
+
+		<div class="topArticles">
+		<div class="panel">
+			<div class="panel-heading">
+				Top Articles
+			</div>
+
+			<div id="articles">
+			<!--THIS IS WHERE JAVASCRIPT INSERTS ARTICLES-->
+			</div>
+
+
+
+
+		</div><!--closing panel-->
+
+	</div>
+
+
+
+
+		</div><!--closing panel-->
+
+	</div>
+
+	</div><!--Closing Container-->
+
+	
+
+
+
+
+	<style>
+	.Container {
+		width:800px;
+		margin:auto;
+		
+	}
+
+	.header {
+		background:#1f1a77;
+		color:lightgrey;
+		padding:20px;
+		text-align: center;
+		font-size:1.2em;
+		border-radius: 20px;
+
+	}
+	
+
+	.panel-heading{
+		border-radius: 20px;
+		height:40px;
+		background-color:#1f1a77;
+		color:lightgrey;
+		width:100%;
+	}
+
+	 
+	.panel {
+		border-color:black;
+		padding:10px;
+	}
+
+
+	#articles {
+		background:#f5f4f9;
+		color:black;
+		padding:10px;
+		margin-top:10px;
+		border-radius: 10px;
+	}
+	.topArticles {
+		display:none;
+	}
+	</style>
+
+
+
+
+
+  <script>
+   
+  	//This is for back end team for when they add articles
+  		//$(".topArticles").show();
+
+
+  </script>
+
+
+
+</body>
+
+</html>
